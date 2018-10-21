@@ -9,39 +9,17 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="container" id="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-    </div>
-    <div class="controls">
-        <p>Flex Directions</p>
-        <input type="radio" name="flex-direction" id="row"
-        onclick="setFlexDirection('row')" checked>
-        <label for="row">flex-direction: row;</label>
-        <br>
-        <input type="radio" name="flex-direction" id="row-reverse"
-        onclick="setFlexDirection('row-reverse')" checked>
-        <label for="row-reverse">flex-direction: row-reverse;</label>
-        <br>
-        <input type="radio" name="flex-direction" id="column"
-        onclick="setFlexDirection('column')" checked>
-        <label for="column">flex-direction: column;</label>
-        <br>
-        <input type="radio" name="flex-direction" id="column-reverse"
-        onclick="setFlexDirection('column-reverse')" checked>
-        <label for="column-reverse">flex-direction: column-reverse;</label>
-        <hr>
-        <p>Writing Modes</p>
-        <input type="radio" name="writing-mode" id="rtl"
-        onclick="setWritingMode('rtl')" checked>
-        <label for="rtl">dir: rtl;</label>
-        <br>
-        <input type="radio" name="writing-mode" id="ltr"
-        onclick="setWritingMode('ltr')" checked>
-        <label for="ltr">dir: ltr;</label>
-    </div>
+    <nav class="links">
+        <link rel="stylesheet" href="">
+        <label for="rd_flex_direction">Flex Directions</label>
+        <label for="rd_flex_wrap">Flex Wrap</label>
+        <label for="rd_flex_flow">Flex Flow</label>
+        <label for="rd_justify_content">Jutify Content</label>
+        <label for="rd_align_items">Align Items</label>
+        <label for="rd_align_content">Align Content</label>
+    </nav>
+    <section class="container" id="container">
+        <a href="flex-direction.html" class="btn btn-purple">Flex Directions</a>
+    </section>
 </body>
 </html>

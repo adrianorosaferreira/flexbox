@@ -4,11 +4,18 @@ body {
     font-size: 1.1em;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
+nav {
+    margin-top: 15px;
+}
+nav a {
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #594255;
+    padding: 5px;
+}
 hr {
     margin: 50px 0;
 }
-
 .container {
     margin: 150px auto;
     max-width: 800px;
@@ -19,22 +26,34 @@ hr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* background-color: #594255; */
+    background-color: #594255;
 }
-.btn {
-    width: 760px;
+.item {
+    background-color: #fff;
+    width: 100px;
     height: 100px;
     margin: 2px;
     text-align: center;
     line-height: 100px;
     font-weight: bold;
     font-family: sans-serif;
-    font-size: 5em;  
+    font-size: 5em;
+    color: #594255;
+}
+.controls {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    line-height: 150%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 1px solid #ddd;
+}
+.btn {
+    text-align: center;
     cursor: pointer;
     border: 0;
-    padding: 10px;
-    display: inline-block;
-    text-decoration: none;
 }
 .btn-purple {
     background-color: #594255;
