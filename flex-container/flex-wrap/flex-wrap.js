@@ -1,11 +1,5 @@
-function setFlexDirection(direction) {
+function setFlexWrap(wrap) {
     var container=document.getElementById('container'); 
-        container.style.WebkitFlexDirection = direction; 
-        container.style.flexDirection = direction;
+        container.style.WebkitFlexWrap = wrap;
+        container.style.flexWrap = wrap;
 }
-
-function setWritingMode(mode) {
-    var container=document.getElementById('container'); 
-        container.dir = mode;
-}
-

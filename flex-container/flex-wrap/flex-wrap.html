@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Flexbox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="flex-direction.css" />
-    <script src="flex-direction.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="flex-wrap.css" />
+    <script src="flex-wrap.js"></script>
 </head>
 <body>
     <nav>
-        <a href="../index.html" class="btn btn-purple">RETURN</a>
+        <a href="../../index.html" class="btn btn-purple">RETURN</a>
     </nav>
     <div class="container" id="container">
         <div class="item">1</div>
@@ -18,33 +18,23 @@
         <div class="item">3</div>
         <div class="item">4</div>
         <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
     </div>
     <div class="controls">
-        <p><span>Flex Directions</span></p>
-        <input type="radio" name="flex-direction" id="row"
-        onclick="setFlexDirection('row')" checked>
-        <label for="row">flex-direction: row;</label>
+        <p><span>Flex Wrap</span></p>
+        <input type="radio" name="flex-wrap" id="nowrap"
+        onclick="setFlexWrap('nowrap')" checked>
+        <label for="nowrap">flex-wrap: nowrap;</label>
         <br>
-        <input type="radio" name="flex-direction" id="row-reverse"
-        onclick="setFlexDirection('row-reverse')" checked>
-        <label for="row-reverse">flex-direction: row-reverse;</label>
+        <input type="radio" name="flex-wrap" id="wrap"
+        onclick="setFlexWrap('wrap')">
+        <label for="wrap">flex-wrap: wrap;</label>
         <br>
-        <input type="radio" name="flex-direction" id="column"
-        onclick="setFlexDirection('column')" checked>
-        <label for="column">flex-direction: column;</label>
-        <br>
-        <input type="radio" name="flex-direction" id="column-reverse"
-        onclick="setFlexDirection('column-reverse')" checked>
-        <label for="column-reverse">flex-direction: column-reverse;</label>
-        <hr>
-        <p><span>Writing Modes</span></p>
-        <input type="radio" name="writing-mode" id="rtl"
-        onclick="setWritingMode('rtl')" checked>
-        <label for="rtl">dir: rtl;</label>
-        <br>
-        <input type="radio" name="writing-mode" id="ltr"
-        onclick="setWritingMode('ltr')" checked>
-        <label for="ltr">dir: ltr;</label>
+        <input type="radio" name="flex-wrap" id="wrap-reverse"
+        onclick="setFlexWrap('wrap-reverse')">
+        <label for="wrap-reverse">flex-wrap: wrap-reverse;</label>
     </div>
 </body>
 </html>
