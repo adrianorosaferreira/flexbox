@@ -1,0 +1,28 @@
+.container {
+    max-width: 840px;
+    box-sizing: border-box;
+    height: 400px;
+    position: relative;
+}
+.line {
+    height: 1px;
+    width: 100%;
+    border-bottom: 2px solid deepPink;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    visibility: hidden;
+}
+.item {
+    margin: 1%;
+}
+.big {
+    width: 150px;
+    font-size: 7em;
+}
+.small {
+    font-size: 2em;
+}
+
+
+

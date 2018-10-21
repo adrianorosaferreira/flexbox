@@ -1,5 +1,10 @@
-function setFlexWrap(wrap) {
+function setFlexFlow(direction, wrap) {
     var container=document.getElementById('container'); 
-        container.style.WebkitFlexWrap = wrap;
-        container.style.flexWrap = wrap;
+        container.style.webkitFlexFlow  = direction + ' ' + wrap;
+        container.style.flexFlow = direction + ' ' + wrap;
+}
+function setStyleHeight(height) {
+    console.log("aqui2");
+    var container=document.getElementById('container'); 
+        container.style.height=height;
 }
