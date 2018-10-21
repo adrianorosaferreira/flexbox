@@ -24,17 +24,30 @@
     </div>
     <div class="controls">
         <p><span>Flex Flow</span></p>
-        <input type="radio" name="flex-flow" id="nowrap"
-        onclick="setFlexFlow('nowrap')" checked>
-        <label for="nowrap">flex-wrap: nowrap;</label>
+        <input type="radio" name="flex-flow" id="row-nowrap"
+        onclick="setFlexFlow('row','nowrap'); setStyleHeight('min-content');" checked>
+        <label for="row-nowrap">flex-flow: row nowrap; /* the default value */</label>
         <br>
-        <input type="radio" name="flex-flow" id="wrap"
-        onclick="setFlexFlow('wrap')">
-        <label for="wrap">flex-wrap: wrap;</label>
+        <input type="radio" name="flex-flow" id="row-wrap"
+        onclick="setFlexFlow('row','wrap'); setStyleHeight('min-content');">
+        <label for="row-wrap">flex-flow: row wrap; </label>
         <br>
-        <input type="radio" name="flex-flow" id="wrap-reverse"
-        onclick="setFlexFlow('wrap-reverse')">
-        <label for="wrap-reverse">flex-wrap: wrap-reverse;</label>
+        <input type="radio" name="flex-flow" id="row-wrap-reverse"
+        onclick="setFlexFlow('row','wrap-reverse'); setStyleHeight('min-content');">
+        <label for="row-wrap-reverse">flex-flow: row wrap-reverse; </label>
+        <br>
+        <input type="radio" name="flex-flow" id="column-nowrap"
+        onclick="setFlexFlow('column','nowrap'); setStyleHeight('min-content');">
+        <label for="column-nowrap">flex-flow: column nowrap;</label>
+        <br>
+        <input type="radio" name="flex-flow" id="column-wrap"
+        onclick="setFlexFlow('column', 'wrap'); setStyleHeight('800px');">
+        <label for="column-wrap">flex-flow: column wrap;</label>
+        <br>
+        <input type="radio" name="flex-flow" id="column-wrap-reverse"
+        onclick="setFlexFlow('column', 'wrap-reverse'); setStyleHeight('800px');">
+        <label for="column-wrap-reverse">flex-flow: column wrap-reverse;</label>
+        <br>
     </div>
 </body>
 </html>
