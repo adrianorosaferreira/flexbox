@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flexbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="order.css" />
+    <script src="order.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="../../index.html" class="btn btn-purple">RETURN</a>
+    </nav>
+    <div class="container" id="container">
+        <div class="item" id="one">1</div>
+        <div class="item" id="two">2</div>
+        <div class="item" id="three">3</div>
+        <div class="item" id="four">4</div>
+        <div class="item" id="five">5</div>
+        <div class="item" id="five">6</div>
+        <div class="item" id="five">7</div>
+        <div class="item" id="five">8</div>
+    </div>
+    <div class="controls">
+        <p><span>Order</span></p>
+        <input type="radio" name="order" id="first-order"
+        onclick="colorDefault(); setOrder('three',-1);" checked>
+        <label for="first-order">.three { order: -1 };</label>
+        <br>
+        <input type="radio" name="order" id="second-order"
+        onclick="colorDefault(); setOrder('three',-1); setOrder('five',-2);">
+        <label for="second-order">.three { order: -1 };.five { order: -2; }</label>
+        <br>
+        <input type="radio" name="order" id="three-order"
+        onclick="colorDefault(); setOrder('three',7);">
+        <label for="three-order">.three { order: 7; }</label>
+        <br>
+        <input type="radio" name="order" id="four-order"
+        onclick="colorDefault(); setOrder('three',1);">
+        <label for="four-order">.three { order: 1; } /* since all items are order: 0; the item with #3 will be put after them. */</label>
+    </div>
+</body>
+</html>
